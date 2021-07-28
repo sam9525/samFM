@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MALL</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./vendor/OwlCarousel2-2.3.4/assets/owl.carousel.css">
+    <link rel="stylesheet" href="./vendor/OwlCarousel2-2.3.4/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="vendor/flickity/flickity.css">
+    <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./vendor/fontawesome-free-5.15.1-web/css/fontawesome.css">
+	<link rel="stylesheet" href="./vendor/fontawesome-free-5.15.1-web/css/brands.css">
+    <link rel="stylesheet" href="./vendor/fontawesome-free-5.15.1-web/css/solid.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mall.css">
+    
+    <script src="vendor/jquery/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="navbar navbar-mall">
+                <a href="index.html" class="brand">
+                    <h1>familymall</h1>
+                </a>
+                <section class="container">
+                    <div class="nav-container">
+                        <div class="nav-box">
+                            <div class="nav-title">
+                                全站商品
+                            </div>
+                        </div>
+                        <div class="nav-box">
+                            <div class="nav-title">人氣商品推薦</div>
+                        </div>
+                        <div class="nav-box">
+                            <h4 class="nav-title"><div class="icon-add"></div>最新活動 不要錯過</h4>
+                            <div class="nav-content">
+                                <p>國家防災日</p>
+                                <p>指定乃木坂商品買就送好禮，送完為止</p>
+                                <p>Hello Kitty 鐵粉限定~</p>
+                            </div>
+                        </div>
+                        <div class="nav-box">
+                            <h4 class="nav-title"><div class="icon-add"></div>誠心拜 安心拜-中元專區</h4>
+                            <div class="nav-content">
+                                <p>宮廟預約普</p>
+                                <p>中原這樣普</p>
+                                <p>箱購飲料</p>
+                                <p>冷凍美食</p>
+                                <p>普渡用品</p>
+                                <p>餅乾零食</p>
+                            </div>
+                        </div>
+                        <div class="nav-box">
+                            <div class="nav-title">再說一次我願意-FamiBazaar</div>
+                        </div>
+                        <div class="nav-box">
+                            <div class="nav-title">抗菌大作戰 健康疫起來</div>
+                        </div>
+                        <div class="nav-box">
+                            <div class="nav-title">我就宅!吃喝玩樂好安心</div>
+                        </div>
+                        <div class="nav-box">
+                            <div class="nav-title">二代青農 友善農耕</div>
+                        </div>
+                        <div class="nav-box">
+                            <div class="nav-title">降價專區</div>
+                        </div>
+                        <div class="nav-box">
+                            <h4 class="nav-title"><div class="icon-add"></div>生活食品</h4>
+                            <div class="nav-content">
+                                <p>茶/水/運動飲料/機能飲料</p>
+                                <p>汽水/咖啡/果汁/奶茶</p>
+                                <p>休閒零嘴/餅乾</p>
+                                <p>糖果/巧克力/珍味蜜餞/豆類</p>
+                                <p>泡麵</p>
+                                <p>沖泡咖啡/麥片/茶包</p>
+                                <p>米油/醬料/罐頭/調味料</p>
+                                <p>調理/即食食品</p>
+                                <p>熱銷箱購飲品</p>
+                            </div>
+                        </div>
+                        <div class="nav-box">
+                            <h4 class="nav-title"><div class="icon-add"></div>生鮮食材.冷凍食品</h4>
+                            <div class="nav-content">
+                                <p>冰品</p>
+                                <p>熱食/滷味小吃/湯品</p>
+                                <p>生鮮肉品</p>
+                                <p>水產海鮮</p>
+                                <p>蔬菜水果/安心食材</p>
+                                <p>團夠甜品/蛋糕</p>
+                                <p>銅板美食</p>
+                            </div>
+                        </div>                        
+                        <div class="nav-box">
+                            <h4 class="nav-title"><div class="icon-add"></div>冷凍美食到店取貨</h4>
+                            <div class="nav-content">
+                                <p>熟食/小吃/滷味</p>
+                                <p>生鮮肉品</p>
+                                <p>水產海鮮</p>
+                                <p>蛋糕/甜點/冰品</p>
+                            </div>
+                        </div>                                                
+                        <div class="nav-box">
+                            <h4 class="nav-title"><div class="icon-add"></div>保健生機.禮盒</h4>
+                            <div class="nav-content">
+                                <p>有機食品</p>
+                                <p>保健飲品/補品</p>
+                                <p>禮盒專區</p>
+                            </div>
+                        </div>                                           
+                        <div class="nav-box">
+                            <h4 class="nav-title"><div class="icon-add"></div>生活.居家.寵物</h4>
+                            <div class="nav-content">
+                                <p>生活雜項</p>
+                                <p>個人清潔</p>
+                                <p>家用清潔</p>
+                                <p>衛生紙/衛生棉/濕紙巾</p>
+                                <p>餐廚用品</p>
+                                <p>家具寢飾</p>
+                                <p>居家裝修</p>
+                                <p>婦幼/玩具</p>
+                                <p>寵物專區</p>
+                            </div>
+                        </div>                                         
+                        <div class="nav-box">
+                            <h4 class="nav-title"><div class="icon-add"></div>3C.家電.運動.休閒.車用</h4>
+                            <div class="nav-content">
+                                <p>手機/平板電腦/相機/導航</p>
+                                <p>3C周邊/線材</p>
+                                <p>視聽娛樂</p>
+                                <p>戶外休閒</p>
+                                <p>車用百貨</p>
+                            </div>
+                        </div>                                       
+                                                         
+                        <div class="nav-box">
+                            <h4 class="nav-title"><div class="icon-add"></div>美妝.美體.舒壓按摩</h4>
+                            <div class="nav-content">
+                                <p>面膜/足模/眼膜</p>
+                                <p>彩妝/指甲油/香水</p>
+                                <p>臉部保養</p>
+                                <p>美體保養</p>
+                            </div>
+                        </div>
+                        <div class="nav-box">
+                            <h4 class="nav-title"><div class="icon-add"></div>服裝.包裝.配件</h4>
+                            <div class="nav-content">
+                                <p>機能服飾</p>
+                                <p>流行服飾/內衣</p>
+                                <p>流行包包</p>
+                                <p>飾品/配件/襪品</p>
+                                <p>暖冬好物</p>
+                                <p>鞋子/鞋類週邊</p>
+                            </div>
+                        </div> 
+                        <div class="nav-box">
+                            <h4 class="nav-title"><div class="icon-add"></div>文.玩具.圖書.文創.影音</h4>
+                            <div class="nav-content">
+                                <p>圖書</p>
+                                <p>文創商品</p>
+                                <p>卡通授權肖像專區</p>
+                                <p>文具.玩具</p>
+                                <p>動漫盛典</p>
+                                <p>流行唱片/影音/DVD</p>
+                                <p>高鐵指定插畫系列商品</p>
+                            </div>
+                        </div> 
+                        <div class="nav-box">
+                            <h4 class="nav-title"><div class="icon-add"></div>品牌旗艦館</h4>
+                            <div class="nav-content">
+                                <p>FamilyMart Collection</p>
+                                <p>奇力愛照料理</p>
+                                <p>里仁食品</p>
+                                <p>STAYREAL品牌館</p>
+                                <p>MAYDAY五月天</p>
+                                <p>HOLA</p>
+                                <p>小米粉館</p>
+                                <p>台糖優質商品館</p>
+                                <p>高鐵紀念品專櫃</p>
+                                <p>勝利社企商品專管</p>
+                                <p>Lift8品牌館</p>
+                                <p>野獸國Beast Kingdom</p>
+                                <p>PEKOE食品雜貨鋪</p>
+                                <p>神腦國際</p>
+                                <p>MIT專管</p>
+                                <p>Solone</p>
+                                <p>HERAN禾聯</p>
+                                <p>Lucy's</p>
+                                <p>果物配</p>
+                                <p>Unique Art</p>
+                                <p>齊柏林文創商品</p>
+                            </div>
+                        </div>
+                        <div class="nav-box">
+                            <div class="nav-title">
+                                <div class="icon1"></div>
+                                離島專區
+                                <div class="icon2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <script src="js/all.js"></script>
+            </div>
+        </div>
+        <div class="topbar topbar-mall">
+            <ul class="nav">
+                <li class="nav_item">
+                    <a href="#!" class="nav_link">最新商品</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#!" class="nav_link">熱銷排行</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#!" class="nav_link">折扣活動</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#!" class="nav_link">活動資訊</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#!" class="shopping-cart"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="classification">
+
+        </div>
+        <div class="news news-mall">
+            <div class="row">
+                <div class="col-lg-3 srbottom-300">
+                    <div class="space">
+                        <div class="news_one">
+                            <div class="ones">
+                                <div class="carousel-cell">
+                                    <div class="image-container3">
+                                        <a href="#!" class="image3" style="background-image: url('./images/EP1.jpg');"></a>
+                                    </div>
+                                    <a href="#!" class="para">
+                                        <h3 class="br">110/6/18起陸續出貨<br>【HELLOKITTY】酒精抗菌柔濕巾20抽12入</h3>
+                                        <h5>NT$459</h5>
+                                        <div class="col-lg-8">
+                                            <div class="red-price">NT$300</div>
+                                        </div>
+                                        <div class="col-lg-5">
+                                            <div class="bottom">
+                                                <a href="#!" class="like"></a>
+                                                <a href="#!" class="shopping-cart"></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 srbottom-300">
+                    <div class="space">
+                        <div class="news_one">
+                            <div class="ones">
+                                <div class="carousel-cell">
+                                    <div class="image-container3">
+                                        <a href="#!" class="image3" style="background-image: url('./images/EP1.jpg');"></a>
+                                    </div>
+                                    <a href="#!" class="para">
+                                        <h3 class="br">110/6/18起陸續出貨<br>【HELLOKITTY】酒精抗菌柔濕巾20抽12入</h3>
+                                        <h5>NT$459</h5>
+                                        <div class="col-lg-8">
+                                            <div class="red-price">NT$300</div>
+                                        </div>
+                                        <div class="col-lg-5">
+                                            <div class="bottom">
+                                                <a href="#!" class="like"></a>
+                                                <a href="#!" class="shopping-cart"></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 srbottom-300">
+                    <div class="space">
+                        <div class="news_one">
+                            <div class="ones">
+                                <div class="carousel-cell">
+                                    <div class="image-container3">
+                                        <a href="#!" class="image3" style="background-image: url('./images/EP1.jpg');"></a>
+                                    </div>
+                                    <a href="#!" class="para">
+                                        <h3 class="br">110/6/18起陸續出貨<br>【HELLOKITTY】酒精抗菌柔濕巾20抽12入</h3>
+                                        <h5>NT$459</h5>
+                                        <div class="col-lg-8">
+                                            <div class="red-price">NT$300</div>
+                                        </div>
+                                        <div class="col-lg-5">
+                                            <div class="bottom">
+                                                <a href="#!" class="like"></a>
+                                                <a href="#!" class="shopping-cart"></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 srbottom-300">
+                    <div class="space">
+                        <div class="news_one">
+                            <div class="ones">
+                                <div class="carousel-cell">
+                                    <div class="image-container3">
+                                        <a href="#!" class="image3" style="background-image: url('./images/EP1.jpg');"></a>
+                                    </div>
+                                    <a href="#!" class="para">
+                                        <h3 class="br">110/6/18起陸續出貨<br>【HELLOKITTY】酒精抗菌柔濕巾20抽12入</h3>
+                                        <h5>NT$459</h5>
+                                        <div class="col-lg-8">
+                                            <div class="red-price">NT$300</div>
+                                        </div>
+                                        <div class="col-lg-5">
+                                            <div class="bottom">
+                                                <a href="#!" class="like"></a>
+                                                <a href="#!" class="shopping-cart"></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 srbottom-300">
+                    <div class="space">
+                        <div class="news_one">
+                            <div class="ones">
+                                <div class="carousel-cell">
+                                    <div class="image-container3">
+                                        <a href="#!" class="image3" style="background-image: url('./images/EP1.jpg');"></a>
+                                    </div>
+                                    <a href="#!" class="para">
+                                        <h3 class="br">110/6/18起陸續出貨<br>【HELLOKITTY】酒精抗菌柔濕巾20抽12入</h3>
+                                        <h5>NT$459</h5>
+                                        <div class="col-lg-8">
+                                            <div class="red-price">NT$300</div>
+                                        </div>
+                                        <div class="col-lg-5">
+                                            <div class="bottom">
+                                                <a href="#!" class="like"></a>
+                                                <a href="#!" class="shopping-cart"></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 srbottom-300">
+                    <div class="space">
+                        <div class="news_one">
+                            <div class="ones">
+                                <div class="carousel-cell">
+                                    <div class="image-container3">
+                                        <a href="#!" class="image3" style="background-image: url('./images/EP1.jpg');"></a>
+                                    </div>
+                                    <a href="#!" class="para">
+                                        <h3 class="br">110/6/18起陸續出貨<br>【HELLOKITTY】酒精抗菌柔濕巾20抽12入</h3>
+                                        <h5>NT$459</h5>
+                                        <div class="col-lg-8">
+                                            <div class="red-price">NT$300</div>
+                                        </div>
+                                        <div class="col-lg-5">
+                                            <div class="bottom">
+                                                <a href="#!" class="like"></a>
+                                                <a href="#!" class="shopping-cart"></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 srbottom-300">
+                    <div class="space">
+                        <div class="news_one">
+                            <div class="ones">
+                                <div class="carousel-cell">
+                                    <div class="image-container3">
+                                        <a href="#!" class="image3" style="background-image: url('./images/EP1.jpg');"></a>
+                                    </div>
+                                    <a href="#!" class="para">
+                                        <h3 class="br">110/6/18起陸續出貨<br>【HELLOKITTY】酒精抗菌柔濕巾20抽12入</h3>
+                                        <h5>NT$459</h5>
+                                        <div class="col-lg-8">
+                                            <div class="red-price">NT$300</div>
+                                        </div>
+                                        <div class="col-lg-5">
+                                            <div class="bottom">
+                                                <a href="#!" class="like"></a>
+                                                <a href="#!" class="shopping-cart"></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 srbottom-300">
+                    <div class="space">
+                        <div class="news_one">
+                            <div class="ones">
+                                <div class="carousel-cell">
+                                    <div class="image-container3">
+                                        <a href="#!" class="image3" style="background-image: url('./images/EP1.jpg');"></a>
+                                    </div>
+                                    <a href="#!" class="para">
+                                        <h3 class="br">110/6/18起陸續出貨<br>【HELLOKITTY】酒精抗菌柔濕巾20抽12入</h3>
+                                        <h5>NT$459</h5>
+                                        <div class="col-lg-8">
+                                            <div class="red-price">NT$300</div>
+                                        </div>
+                                        <div class="col-lg-5">
+                                            <div class="bottom">
+                                                <a href="#!" class="like"></a>
+                                                <a href="#!" class="shopping-cart"></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 srbottom-300">
+                    <div class="space">
+                        <div class="news_one">
+                            <div class="ones">
+                                <div class="carousel-cell">
+                                    <div class="image-container3">
+                                        <a href="#!" class="image3" style="background-image: url('./images/EP1.jpg');"></a>
+                                    </div>
+                                    <a href="#!" class="para">
+                                        <h3 class="br">110/6/18起陸續出貨<br>【HELLOKITTY】酒精抗菌柔濕巾20抽12入</h3>
+                                        <h5>NT$459</h5>
+                                        <div class="col-lg-8">
+                                            <div class="red-price">NT$300</div>
+                                        </div>
+                                        <div class="col-lg-5">
+                                            <div class="bottom">
+                                                <a href="#!" class="like"></a>
+                                                <a href="#!" class="shopping-cart"></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 srbottom-300">
+                    <div class="space">
+                        <div class="news_one">
+                            <div class="ones">
+                                <div class="carousel-cell">
+                                    <div class="image-container3">
+                                        <a href="#!" class="image3" style="background-image: url('./images/EP1.jpg');"></a>
+                                    </div>
+                                    <a href="#!" class="para">
+                                        <h3 class="br">110/6/18起陸續出貨<br>【HELLOKITTY】酒精抗菌柔濕巾20抽12入</h3>
+                                        <h5>NT$459</h5>
+                                        <div class="col-lg-8">
+                                            <div class="red-price">NT$300</div>
+                                        </div>
+                                        <div class="col-lg-5">
+                                            <div class="bottom">
+                                                <a href="#!" class="like"></a>
+                                                <a href="#!" class="shopping-cart"></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 srbottom-300">
+                    <div class="space">
+                        <div class="news_one">
+                            <div class="ones">
+                                <div class="carousel-cell">
+                                    <div class="image-container3">
+                                        <a href="#!" class="image3" style="background-image: url('./images/EP1.jpg');"></a>
+                                    </div>
+                                    <a href="#!" class="para">
+                                        <h3 class="br">110/6/18起陸續出貨<br>【HELLOKITTY】酒精抗菌柔濕巾20抽12入</h3>
+                                        <h5>NT$459</h5>
+                                        <div class="col-lg-8">
+                                            <div class="red-price">NT$300</div>
+                                        </div>
+                                        <div class="col-lg-5">
+                                            <div class="bottom">
+                                                <a href="#!" class="like"></a>
+                                                <a href="#!" class="shopping-cart"></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 srbottom-300">
+                    <div class="space">
+                        <div class="news_one">
+                            <div class="ones">
+                                <div class="carousel-cell">
+                                    <div class="image-container3">
+                                        <a href="#!" class="image3" style="background-image: url('./images/EP1.jpg');"></a>
+                                    </div>
+                                    <a href="#!" class="para">
+                                        <h3 class="br">110/6/18起陸續出貨<br>【HELLOKITTY】酒精抗菌柔濕巾20抽12入</h3>
+                                        <h5>NT$459</h5>
+                                        <div class="col-lg-8">
+                                            <div class="red-price">NT$300</div>
+                                        </div>
+                                        <div class="col-lg-5">
+                                            <div class="bottom">
+                                                <a href="#!" class="like"></a>
+                                                <a href="#!" class="shopping-cart"></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 srbottom-300">
+                    <div class="space">
+                        <div class="news_one">
+                            <div class="ones">
+                                <div class="carousel-cell">
+                                    <div class="image-container3">
+                                        <a href="#!" class="image3" style="background-image: url('./images/EP1.jpg');"></a>
+                                    </div>
+                                    <a href="#!" class="para">
+                                        <h3 class="br">110/6/18起陸續出貨<br>【HELLOKITTY】酒精抗菌柔濕巾20抽12入</h3>
+                                        <h5>NT$459</h5>
+                                        <div class="col-lg-8">
+                                            <div class="red-price">NT$300</div>
+                                        </div>
+                                        <div class="col-lg-5">
+                                            <div class="bottom">
+                                                <a href="#!" class="like"></a>
+                                                <a href="#!" class="shopping-cart"></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 srbottom-300">
+                    <div class="space">
+                        <div class="news_one">
+                            <div class="ones">
+                                <div class="carousel-cell">
+                                    <div class="image-container3">
+                                        <a href="#!" class="image3" style="background-image: url('./images/EP1.jpg');"></a>
+                                    </div>
+                                    <a href="#!" class="para">
+                                        <h3 class="br">110/6/18起陸續出貨<br>【HELLOKITTY】酒精抗菌柔濕巾20抽12入</h3>
+                                        <h5>NT$459</h5>
+                                        <div class="col-lg-8">
+                                            <div class="red-price">NT$300</div>
+                                        </div>
+                                        <div class="col-lg-5">
+                                            <div class="bottom">
+                                                <a href="#!" class="like"></a>
+                                                <a href="#!" class="shopping-cart"></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 srbottom-300">
+                    <div class="space">
+                        <div class="news_one">
+                            <div class="ones">
+                                <div class="carousel-cell">
+                                    <div class="image-container3">
+                                        <a href="#!" class="image3" style="background-image: url('./images/EP1.jpg');"></a>
+                                    </div>
+                                    <a href="#!" class="para">
+                                        <h3 class="br">110/6/18起陸續出貨<br>【HELLOKITTY】酒精抗菌柔濕巾20抽12入</h3>
+                                        <h5>NT$459</h5>
+                                        <div class="col-lg-8">
+                                            <div class="red-price">NT$300</div>
+                                        </div>
+                                        <div class="col-lg-5">
+                                            <div class="bottom">
+                                                <a href="#!" class="like"></a>
+                                                <a href="#!" class="shopping-cart"></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 srbottom-300">
+                    <div class="space">
+                        <div class="news_one">
+                            <div class="ones">
+                                <div class="carousel-cell">
+                                    <div class="image-container3">
+                                        <a href="#!" class="image3" style="background-image: url('./images/EP1.jpg');"></a>
+                                    </div>
+                                    <a href="#!" class="para">
+                                        <h3 class="br">110/6/18起陸續出貨<br>【HELLOKITTY】酒精抗菌柔濕巾20抽12入</h3>
+                                        <h5>NT$459</h5>
+                                        <div class="col-lg-8">
+                                            <div class="red-price">NT$300</div>
+                                        </div>
+                                        <div class="col-lg-5">
+                                            <div class="bottom">
+                                                <a href="#!" class="like"></a>
+                                                <a href="#!" class="shopping-cart"></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer footer-mall">
+            <div class="row">
+                <div class="col-lg-5 srtop-300">
+                    <div class="space">
+                        <h2 class="title">全家FamilyMart APP</h2>
+                        <div class="news_two">
+                            <div class="fmapp">
+                                <div class="image-container4">
+                                    <a href="#!" class="image4" style="background-image: url('./images/app1.jpg');"></a>
+                                </div>
+                            </div>
+                            <h3 class="para">掃碼立即下載</h3>
+                            <div class="fmapp">
+                                <a data-fancybox="gallery" href="./images/app2big.png">
+                                    <img src="./images/app2.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 srtop-400">
+                    <div class="space">
+                        <h2 class="title">My FamilPort APP</h2>
+                        <div class="news_two">
+                            <div class="fmapp">
+                                <div class="image-container4">
+                                    <a href="#!" class="image4" style="background-image: url('./images/app3.png');"></a>
+                                </div>
+                            </div>
+                            <h3 class="para">掃碼立即下載</h3>
+                            <div class="fmapp">
+                                <a data-fancybox="gallery" href="./images/app4big.png">
+                                    <img src="./images/app4.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 srtop-500">
+                    <div class="space">
+                        <h2 class="title">全家LINE官方帳號</h2>
+                        <div class="news_two">
+                            <div class="fmapp">
+                                <div class="image-container4">
+                                    <a href="#!" class="image4" style="background-image: url('./images/line1.jpg');"></a>
+                                </div>
+                            </div>
+                            <h3 class="para">掃碼立即下載</h3>
+                            <div class="fmapp">
+                                <a data-fancybox="gallery" href="./images/line2big.png">
+                                    <img src="./images/line2.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 srtop-600">
+                    <div class="space">
+                        <div class="fans">
+                            <div class="fmapp">
+                                <div class="image-container4">
+                                    <a href="#!" class="image4" style="background-image: url('./images/fans1.jpg');"></a>
+                                </div>
+                            </div>
+                            <h3 class="para">全家FmailyMart粉絲團</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 srtop-700">
+                    <div class="space">
+                        <div class="fans">
+                            <div class="fmapp">
+                                <div class="image-container4">
+                                    <a href="#!" class="image4" style="background-image: url('./images/fans2.png');"></a>
+                                </div>
+                            </div>
+                            <h3 class="para">全家在這裡粉絲團</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-55 srtop-800">
+                    <div class="news_three">
+                        <div class="fmapp">
+                            <div class="image-container4">
+                                <a href="#!" class="image4" style="background-image: url('./images/youtube.png');"></a>
+                            </div>
+                        </div>
+                        <h3 class="para">FamiChannel專區</h3>
+                    </div>
+                </div>
+                <div class="col-lg-55 srtop-800">
+                    <div class="news_three">
+                        <div class="fmapp">
+                            <div class="image-container4">
+                                <a href="#!" class="image4" style="background-image: url('./images/famiclub.png');"></a>
+                            </div>
+                        </div>
+                        <h3 class="para">FamiClub</h3>
+                    </div>
+                </div>
+                <div class="col-lg-55 srtop-800">
+                    <div class="news_three">
+                        <div class="fmapp">
+                            <div class="image-container4">
+                                <a href="#!" class="image4" style="background-image: url('./images/fmih.jpg');"></a>
+                            </div>
+                        </div>
+                        <h3 class="para">全家在這裡部落格</h3>
+                    </div>
+                </div>
+                <div class="col-lg-55 srtop-800">
+                    <div class="news_three">
+                        <div class="fmapp">
+                            <div class="image-container4">
+                                <a href="#!" class="image4" style="background-image: url('./images/wifi.jpg');"></a>
+                            </div>
+                        </div>
+                        <h3 class="para">FamiWifi</h3>
+                    </div>
+                </div>
+                <div class="col-lg-55 srtop-800">
+                    <div class="news_three">
+                        <div class="fmapp">
+                            <div class="image-container4">
+                                <a href="#!" class="image4" style="background-image: url('./images/ins.jpg');"></a>
+                            </div>
+                        </div>
+                        <h3 class="para">FamilyMart Instagram</h3>
+                    </div>
+                </div>
+                <div class="col-lg-7 srtop-800">
+                    <div class="preview">
+                        <h2 class="para">
+                            FamilyMart 全家便利商店股份有限公司<br>
+                            104台北市中山區中山北路二段61號7F  TEL:02-25239588  客服電話 0800-221-363<br>
+                            隱私權聲明 個資告知事項<br>
+                            Copyright(c)2013FamilyMart All rights reserved.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="vendor/OwlCarousel2-2.3.4/owl.carousel.js"></script> 
+<script src="vendor/flickity/flickity.pkgd.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+            animateOut: 'fadeOut',
+            items: 1,
+            autoplay: true,
+            loop: true,
+            autoplayTimeout: 5000
+        })        
+        $('.flickity').flickity({
+            cellAlign: 'left',
+            contain: true,
+            autoPlay: 5000,
+            wrapAround: true
+        })
+        $('.ones').flickity({
+            cellAlign: 'left',
+            contain: true,
+            autoPlay: 5000,
+            wrapAround: true
+        })
+    })
+</script>
+</html>

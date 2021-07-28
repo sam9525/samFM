@@ -1,0 +1,187 @@
+.navbar-mall{
+    position: absolute;
+    display: block;
+    left: 0;
+
+}
+
+.topbar-mall{
+    padding-left: 220px;
+}
+
+.classification{
+    padding-top: 45px;
+    padding-left: 220px;
+}
+.news_one:hover{
+    cursor: pointer;
+}
+.news-mall{
+    padding-left: 220px;
+}
+.news-mall .news_one{
+    padding: 10px;
+    margin-bottom: 0px;
+}
+.news-mall .para{
+    text-align: left;
+    vertical-align: center;
+}
+.news-mall .para .br{
+    padding-top: 20px;
+    overflow: hidden;
+    text-overflow : ellipsis;
+    white-space : nowrap;
+}
+.news-mall .para h3{
+    padding-top: 20px;
+    height: 68px;
+}
+.news-mall .para h5{
+    text-decoration: line-through;
+}
+.news-mall .para .red-price{
+    color: red;
+    font-size: 20px;
+}
+
+.bottom .like{
+    position: absolute;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+
+    background-image: url('../icon/heart-line.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  
+}
+.bottom .like.active{
+    background-image: url("../icon/heart-fill.svg");
+}
+.bottom .shopping-cart{
+    position: absolute;
+    top: -10px;
+    right: -20px;
+    width: 30px;
+    height: 30px;
+    
+    background-image: url('../icon/shopping-cart-line.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.topbar-mall a{
+    color: #fff;
+}
+.topbar-mall .shopping-cart{
+    float: right;
+    top: -8px;
+    width: 30px;
+    height: 30px;
+
+    background-image: url('../icon/shopping-cart-line.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.space-mall{
+    visibility: hidden;
+}
+
+.footer-mall{
+    padding-left: 220px;
+    padding-top: 200px;
+}
+
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav-container {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+}
+
+.nav-container .nav-content {
+    display: none;
+    padding-left: 25px;
+}
+
+.nav-container .nav-title {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: normal;
+    cursor: pointer;
+    background: #fefefe;
+}
+.nav-title .icon-add{
+    float: right;
+    top: -2px;
+    left: 15px;
+    width: 20px;
+    height: 20px;
+
+    background-image:url('../icon/add-line.svg');
+    background-size: cover;
+    transition: all 0.3s;
+}
+.nav-container .nav-box.active .icon-add{
+    background-image: url('../icon/subtract-line.svg');
+}
+
+.nav-container .nav-title:hover,
+.nav-container .nav-title:active,
+.nav-container .nav-box.active .nav-title {
+    background-color: #52de97;
+}
+
+.nav-container .nav-title:hover i:before,
+.nav-container .nav-title:hover i:active,
+.nav-container .nav-box.active i {
+    left: 200px;
+    color: #fff;
+}
+
+.nav-container .nav-box i {
+    position: absolute;
+    top: 4px;
+    left: 200px;
+    font-style: normal;
+    font-size: 26px;
+    color: #008BD5;
+
+}
+
+.nav-container .nav-box i:before {
+    content: '+ ';
+}
+
+.nav-container .nav-box.active i:before {
+    content: '- ';
+}
+.nav-container .nav-box .icon1{
+    float: left;
+    top: -2px;
+    left: -5px;
+    width: 20px;
+    height: 20px;
+    color: #fff;
+
+    background-image: url('../icon/airplane-mode.png');
+    background-size: contain;
+}
+.nav-container .nav-box .icon2{
+    float: right;
+    top: -2px;
+    left: -73px;
+    width: 20px;
+    height: 20px;
+
+    background-image: url('../icon/airplane-mode.png');
+    background-size: contain;
+}
