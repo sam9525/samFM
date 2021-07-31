@@ -1,23 +1,46 @@
 .navbar-mall{
     position: absolute;
     display: block;
-    left: 0;
-
+    width: 14%;
+    top: 0;
+    left: 16%;
+    z-index: 20;
+    transition: all 0.5s;
+    padding: 1% 0px 0px 1%;
 }
 
-.topbar-mall{
-    padding-left: 220px;
+.topbar-mall .container{
+    height: 45px;
+}
+.topbar-mall .brand{
+    display: inline-block;
+    height: 100%;
+
+    background-image: url("../images/topbottom.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+    white-space: nowrap;
+    text-indent: 100%;
+    overflow: hidden;
 }
 
 .classification{
     padding-top: 45px;
     padding-left: 220px;
 }
+
+.new-mall{
+    position: absolute;
+}
+.container2{
+    padding-right: 16%;
+    padding-left: 32%;
+}
+
 .news_one:hover{
     cursor: pointer;
-}
-.news-mall{
-    padding-left: 220px;
 }
 .news-mall .news_one{
     padding: 10px;
@@ -48,6 +71,7 @@
 .bottom .like{
     position: absolute;
     top: -10px;
+    right: 20px;
     width: 30px;
     height: 30px;
 
@@ -62,7 +86,7 @@
 .bottom .shopping-cart{
     position: absolute;
     top: -10px;
-    right: -20px;
+    right: -15px;
     width: 30px;
     height: 30px;
     
@@ -87,17 +111,18 @@
     visibility: hidden;
 }
 
+.mall-space{
+    padding: 10px;
+}
+
 .footer-mall{
-    padding-left: 220px;
     padding-top: 200px;
 }
 
-
-.container {
+.mall-container{
     width: 100%;
     margin: 0 auto;
 }
-
 .nav-container {
     position: relative;
     width: 100%;
@@ -170,7 +195,6 @@
     left: -5px;
     width: 20px;
     height: 20px;
-    color: #fff;
 
     background-image: url('../icon/airplane-mode.png');
     background-size: contain;
@@ -178,7 +202,7 @@
 .nav-container .nav-box .icon2{
     float: right;
     top: -2px;
-    left: -73px;
+    left: -53px;
     width: 20px;
     height: 20px;
 

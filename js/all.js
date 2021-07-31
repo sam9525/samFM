@@ -4,9 +4,12 @@ $(document).ready(function () {
 		if ($(event.target).hasClass("nav-title")) {
 			$(event.target).parent(".nav-box").toggleClass("active");
 			$(event.target).siblings(".nav-content").slideToggle("300");
+		}if ($(event.target).hasClass("icon-add")) {
+			$(event.target).parent(".nav-title").parent(".nav-box").toggleClass("active");
+			$(event.target).parent(".nav-title").siblings(".nav-content").slideToggle("300");
 		}		
-		if($(event.target).hasClass("bottom")){
-			$(event.target).child(".like").toggleClass("active");
+		if($(event.target).hasClass("para")){
+			$(event.target).siblings(".like").toggleClass("active");
 		}
 	});
 });
