@@ -9,23 +9,6 @@
     padding: 1% 0px 0px 1%;
 }
 
-.topbar-mall .container{
-    height: 45px;
-}
-.topbar-mall .brand{
-    display: inline-block;
-    height: 100%;
-
-    background-image: url("../images/topbottom.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    
-    white-space: nowrap;
-    text-indent: 100%;
-    overflow: hidden;
-}
-
 .classification{
     padding-top: 45px;
     padding-left: 220px;
@@ -51,10 +34,9 @@
     vertical-align: center;
 }
 .news-mall .para .br{
-    padding-top: 20px;
     overflow: hidden;
+    white-space: nowrap;
     text-overflow : ellipsis;
-    white-space : nowrap;
 }
 .news-mall .para h3{
     padding-top: 20px;
@@ -66,6 +48,9 @@
 .news-mall .para .red-price{
     color: red;
     font-size: 20px;
+}
+.hidden{
+    visibility: hidden;
 }
 
 .bottom .like{
@@ -142,7 +127,6 @@
     font-size: 16px;
     font-weight: normal;
     cursor: pointer;
-    background: #fefefe;
 }
 .nav-title .icon-add{
     float: right;
@@ -165,12 +149,6 @@
     background-color: #52de97;
 }
 
-.nav-container .nav-title:hover i:before,
-.nav-container .nav-title:hover i:active,
-.nav-container .nav-box.active i {
-    left: 200px;
-    color: #fff;
-}
 
 .nav-container .nav-box i {
     position: absolute;
@@ -182,13 +160,6 @@
 
 }
 
-.nav-container .nav-box i:before {
-    content: '+ ';
-}
-
-.nav-container .nav-box.active i:before {
-    content: '- ';
-}
 .nav-container .nav-box .icon1{
     float: left;
     top: -2px;
