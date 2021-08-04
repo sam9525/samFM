@@ -10,7 +10,8 @@ $(document).ready(function () {
 		}
 		if($(event.target).hasClass("nav_link")) {
 			$(event.target).parent(".nav_item").toggleClass("active");
-		}		
+		}
+				
 		if($(event.target).hasClass("para")){
 			$(event.target).siblings(".like").toggleClass("active");
 		}

@@ -52,6 +52,9 @@
 .hidden{
     visibility: hidden;
 }
+.news-mall .news_one:hover{
+    transform: scale(1.05);
+}
 
 .bottom .like{
     position: absolute;
