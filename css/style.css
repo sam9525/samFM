@@ -62,7 +62,7 @@ a{
     width: 20%;
 }
 .col-lg-55{
-    width: 8%;
+    width: 13%;
 }
 .col-lg-7{
     width: 40%;
@@ -225,7 +225,7 @@ a{
 }
 .topbar .nav .nav_item{
     float: left;
-    padding-top: 15px;
+    padding-top: 13px;
     padding-left: 10px;
 }
 .topbar .nav .nav_item:hover{
@@ -241,7 +241,7 @@ a{
     }
   }
 .topbar .nav .nav_link{
-    font-size: 15px;
+    font-size:  18px;
     padding: 6px 10px 6px 10px;
     color: #fff;
 }
@@ -315,11 +315,28 @@ a{
     right: 0;
     top: 0;
     bottom: 0;
-    margin: 20px;
+    margin: 30px;
 
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
+.image2 .des{
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: #fff;
+
+}
+#tab-1, #tab-2{
+    transform: all 30s;
+}
+#tab-1 .image-container2{
+    background-color: #000;
+}
+.margin10{
+    margin: 10px;
 }
 .tabs1 li a{
     float: left;
@@ -327,7 +344,6 @@ a{
     background-color: #fff;
     border-bottom: 5px solid #E5E5E5;
     font-size: 20px;
-    font-weight: 300;
     padding: 14px 0px;
     text-decoration: none;
 
@@ -339,7 +355,7 @@ a{
     height: 5px;
     top: 100%;
     background-color: #008CD7;
-    animation: sliderPanel1 1s;
+    animation: sliderPanel1 0.5s;
 }
 .tabs1 li.active .panel-2{
     position: absolute;
@@ -348,7 +364,7 @@ a{
     background-color: #1CC0FF;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    animation: sliderPanel2 0.5s 1s;
+    animation: sliderPanel2 0.5s 0.5s;
 }
 @keyframes sliderPanel1{
 	0%{width: 0;left: 0;}
@@ -363,16 +379,13 @@ a{
     background-color: #1CC0FF;
     border-bottom: 5px solid #008CD7;
 
-    transition-delay: 1.5s;
+    transition-delay: 1s;
 }
 .tabs1 ul a{
     width: 25%;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     text-align: center;
-}
-#tab-1{
-    background-color: #000;
 }
 
 .container0{
@@ -460,7 +473,7 @@ a{
     display: none;
 }
 
-.footer .row{
+.footer .container{
     background-color: #fff;
 }
 .footer .col-lg-5{
@@ -479,13 +492,18 @@ a{
 .footer .title{
     padding: 10px;
     line-height: 24px;
+    text-align: center;
     white-space: nowrap;
 }
 .footer .para{
     text-align: center;
-
+    padding: 3px;
+    
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow : ellipsis;
 }
-.footer .fans{
+.footer .f{
     border: 2px solid rgba(0,0,0,0);
     background-color: #fff;
 }
@@ -511,16 +529,13 @@ a{
     box-shadow: 0px 0px 16px -3px #008BD5;
 } */
 .news_three{
-    height: 100px;
     border: 2px solid rgba(0,0,0,0);
-    margin-top: 30px;
     background-color: #fff;
-
 }
 .news_three:hover{
     border: 2px solid #008BD5;
     box-shadow: 5px 5px 14px -10px #000;
-
+    z-index: 5;
 }
 .image-container4{
     width: 100%;

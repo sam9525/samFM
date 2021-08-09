@@ -6,12 +6,7 @@
     left: 16%;
     z-index: 20;
     transition: all 0.5s;
-    padding: 1% 0px 0px 1%;
-}
-
-.classification{
-    padding-top: 45px;
-    padding-left: 220px;
+    padding: 55px 0px 0px 1%;
 }
 
 .new-mall{
@@ -20,6 +15,31 @@
 .container2{
     padding-right: 16%;
     padding-left: 32%;
+}
+
+.nav_crumb_list{
+    padding-top: 65px;
+    padding-bottom: 20px;
+}
+.ncl_item{
+    padding: 10px;
+}
+
+.classification .cf_item {
+    display: inline-block;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.classification .cf_link {
+    float: left;
+    padding: 10px;
+    border: 2px solid rgba(0,0,0,0);
+    border-radius: 50px;
+    background-color: #fff;
+}
+.classification .cf_link:hover {
+    border: 2px solid #008BD5;
+    box-shadow: 5px 5px 14px -10px #000;
 }
 
 .news_one:hover{
@@ -33,10 +53,11 @@
     text-align: left;
     vertical-align: center;
 }
-.news-mall .para .br{
+.news-mall .news_one .para h4{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
     overflow: hidden;
-    white-space: nowrap;
-    text-overflow : ellipsis;
 }
 .news-mall .para h3{
     padding-top: 20px;
