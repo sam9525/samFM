@@ -194,7 +194,7 @@ a{
     width: 100%;
 }
 
-.topbar .container0{
+.topbar .container{
     height: 45px;
 }
 .topbar{
@@ -393,9 +393,12 @@ a{
     padding-right: 10%;
 }
 .container{
-    padding-left: 16%;
-    padding-right: 16%;
+    padding: 0 16% 0 16%;
 }
+
+
+
+
 .news{    
     background-color: #F1F1F1;
 }
@@ -423,10 +426,16 @@ a{
     border: 2px solid #008BD5;
     box-shadow: 5px 5px 14px -10px #000;
 }
-.news .para{
+.news .new-product .para{
     line-height: 24px;
     text-align: center;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
 }
+
 .image-container3{
     width: 100%;
     overflow: hidden;

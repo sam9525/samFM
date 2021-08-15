@@ -1,21 +1,40 @@
 .navbar-mall{
     position: absolute;
-    display: block;
     width: 14%;
     top: 0;
     left: 16%;
     z-index: 20;
     transition: all 0.5s;
-    padding: 55px 0px 0px 1%;
+    padding: 55px 0px 0px 0px;
 }
 
 .new-mall{
     position: absolute;
 }
+
 .container2{
     padding-right: 16%;
     padding-left: 32%;
 }
+/* @media screen and (min-width: 1440px) {
+    .topbar-mall .container{
+    }
+    .container2{
+        padding-right: 0;
+        padding-left: 615px;
+    }
+    .news-mall{
+        width: 1000px;
+    }
+    .navbar-mall{
+        width: 269px;
+    }
+}
+@media screen and (min-width: 1921px) {
+    .news-mall{
+        width: 1300px;
+    }
+} */
 
 .nav_crumb_list{
     padding-top: 65px;
@@ -25,6 +44,12 @@
     padding: 10px;
 }
 
+.classification {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
 .classification .cf_item {
     display: inline-block;
     padding-top: 10px;
