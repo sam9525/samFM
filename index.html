@@ -15,14 +15,23 @@
     <link rel="stylesheet" href="./vendor/fontawesome-free-5.15.1-web/css/solid.css">
 	<link rel="stylesheet" href="vendor/animate/animate.css">
     <link rel="stylesheet" href="./css/style.css">
+
+    <script src="vendor/jquery/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("button").click(function() {
+                $(".navbar").toggle();
+            });
+        });
+    </script>
 </head>
 <body>
     <div class="wrapper">
         <div class="header">
             <div class="navbarhide">
-                <a herf="#!" class="navbar-hide">
+                <button class="navbar-hide">
                     <i class="fas fa-bars"></i>
-                </a>
+                </button>
             </div>
             <div class="navbar">
                 <a href="index.html" class="brand">
@@ -327,6 +336,7 @@
                     </ul>
                 </div>
             </div>
+            
             <script src="js/all.js"></script>
         </div>
         <div class="topbar">
@@ -384,13 +394,13 @@
                     <div class="srleft">
                         <div class="col-lg-3 col-md-6">
                             <div class="news_one">
-                                <h2>店鋪查詢</h2>
+                                <h2 class="title">店鋪查詢</h2>
                                 <div class="image-container2">
                                     <a href="#!" class="image2 margin10" style="background-image: url('./images/service1.jpg');"></a>
                                 </div>
                             </div>
                             <div class="news_one">
-                                <h2>代收查詢</h2>
+                                <h2 class="title">代收查詢</h2>
                                 <div class="image-container2">
                                     <a href="#!" class="image2" style="background-image: url('./images/service2.png');"></a>
                                 </div>
@@ -398,13 +408,13 @@
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="news_one">
-                                <h2>全家店到店</h2>
+                                <h2 class="title">全家店到店</h2>
                                 <div class="image-container2">
                                     <a href="#!" class="image2" style="background-image: url('./images/service3.png');"></a>
                                 </div>
                             </div>
                             <div class="news_one">
-                                <h2>宅配服務</h2>
+                                <h2 class="title">宅配服務</h2>
                                 <div class="image-container2">
                                     <a href="#!" class="image2" style="background-image: url('./images/service4.png');"></a>
                                 </div>
@@ -421,7 +431,7 @@
                             </li>
                         </ul>
                         <div id="tab-1">
-                            <div class="service_image col-lg-6 animate__animated animate__fadeInRight">
+                            <div class="service_image col-lg-6 col-md-12 animate__animated animate__fadeInRight">
                                 <div class="owl-carousel owl-theme">
                                     <div class="image-container2">
                                         <a href="#!" class="image2" style="background-image: url('./images/service5.jpg');">
@@ -447,7 +457,7 @@
                             </div>
                         </div>
                         <div id="tab-2">
-                            <div class="service_image col-lg-6 animate__animated animate__fadeInRight">
+                            <div class="service_image col-lg-6 col-md-12 animate__animated animate__fadeInRight">
                                 <div class="owl-carousel owl-theme">
                                     <div class="image-container2">
                                         <a href="#!" class="image2" style="background-image: url('./images/service9.jpg');"></a>
@@ -718,7 +728,7 @@
         <div class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-5">
+                    <div class="col-lg-5 col-md-4">
                         <div class="space">
                             <h3 class="title">全家FamilyMart APP</h3>
                             <div class="news_two">
@@ -736,7 +746,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-5">
+                    <div class="col-lg-5 col-md-4">
                         <div class="space">
                             <h3 class="title">My FamilPort APP</h3>
                             <div class="news_two">
@@ -754,7 +764,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-5">
+                    <div class="col-lg-5 col-md-4">
                         <div class="space">
                             <h3 class="title">全家LINE官方帳號</h3>
                             <div class="news_two">
@@ -772,7 +782,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-55">
+                    <div class="col-lg-55 col-md-55">
                         <div class="news_three">
                             <div class="fmapp">
                                 <div class="image-container4">
@@ -782,7 +792,7 @@
                             <h5 class="para">全家FmailyMart粉絲團</h5>
                         </div>
                     </div>
-                    <div class="col-lg-55">
+                    <div class="col-lg-55 col-md-55">
                         <div class="news_three">
                             <div class="fmapp">
                                 <div class="image-container4">
@@ -792,7 +802,7 @@
                             <h5 class="para">全家在這裡粉絲團</h5>
                         </div>
                     </div>
-                    <div class="col-lg-55">
+                    <div class="col-lg-55 col-md-55">
                         <div class="news_three">
                             <div class="fmapp">
                                 <div class="image-container4">
@@ -802,7 +812,7 @@
                             <h5 class="para">FamiChannel專區</h5>
                         </div>
                     </div>
-                    <div class="col-lg-55">
+                    <div class="col-lg-55 col-md-55">
                         <div class="news_three">
                             <div class="fmapp">
                                 <div class="image-container4">
@@ -812,7 +822,7 @@
                             <h5 class="para">FamiClub</h5>
                         </div>
                     </div>
-                    <div class="col-lg-55">
+                    <div class="col-lg-55 col-md-55">
                         <div class="news_three">
                             <div class="fmapp">
                                 <div class="image-container4">
@@ -822,7 +832,7 @@
                             <h5 class="para">全家在這裡部落格</h5>
                         </div>
                     </div>
-                    <div class="col-lg-55">
+                    <div class="col-lg-55 col-md-55">
                         <div class="news_three">
                             <div class="fmapp">
                                 <div class="image-container4">
@@ -832,7 +842,7 @@
                             <h5 class="para">FamiWifi</h5>
                         </div>
                     </div>
-                    <div class="col-lg-55">
+                    <div class="col-lg-55 col-md-55">
                         <div class="news_three">
                             <div class="fmapp">
                                 <div class="image-container4">
@@ -917,13 +927,15 @@
             origin: 'right',
 		    distance: '200px',
 	    	delay: 300,
-		    duration: 1000
+		    duration: 1000,
+            reset: false
         });
         ScrollReveal().reveal('.srleft',{
             origin: 'left',
 		    distance: '100px',
 	    	delay: 300,
-		    duration: 1000
+		    duration: 1000,
+            reset: false
         });
         ScrollReveal().reveal('.srbottom-300',{
             origin: 'bottom',
