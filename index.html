@@ -17,13 +17,7 @@
     <link rel="stylesheet" href="./css/style.css">
 
     <script src="vendor/jquery/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $("button").click(function() {
-                $(".navbar").toggle();
-            });
-        });
-    </script>
+    
 </head>
 <body>
     <div class="wrapper">
@@ -36,7 +30,12 @@
             <div class="navbar">
                 <a href="index.html" class="brand">
                     <h1>familymart</h1>
-                </a>
+                </a>                
+                <div class="navbarhide">
+                    <button class="navbar-hide">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
                 <div class="menu">
                     <ul class="nav">
                         <li class="nav_item">
@@ -44,6 +43,11 @@
                             <div class="menu2">
                                 <div class="title">
                                     最新活動
+                                </div>
+                                <div class="navbarhide">
+                                    <button class="navbar-hide">
+                                        <i class="fas fa-bars"></i>
+                                    </button>
                                 </div>
                                 <ul class="extend">
                                     <li class="extend_item">
@@ -91,6 +95,11 @@
                                 <div class="title">
                                     新品情報
                                 </div>
+                                <div class="navbarhide">
+                                    <button class="navbar-hide">
+                                        <i class="fas fa-bars"></i>
+                                    </button>
+                                </div>
                                 <ul class="extend">
                                     <li class="extend_item">
                                         <div class="unfold"></div>
@@ -116,6 +125,11 @@
                             <div class="menu2">
                                 <div class="title">
                                     FamilPort
+                                </div>
+                                <div class="navbarhide">
+                                    <button class="navbar-hide">
+                                        <i class="fas fa-bars"></i>
+                                    </button>
                                 </div>
                                 <ul class="extend">
                                     <li class="extend_item">
@@ -166,6 +180,11 @@
                             <div class="menu2">
                                 <div class="title">
                                     便利服務
+                                </div>
+                                <div class="navbarhide">
+                                    <button class="navbar-hide">
+                                        <i class="fas fa-bars"></i>
+                                    </button>
                                 </div>
                                 <ul class="extend">
                                     <li class="extend_item">
@@ -237,6 +256,11 @@
                                 <div class="title">
                                     會員中心
                                 </div>
+                                <div class="navbarhide">
+                                    <button class="navbar-hide">
+                                        <i class="fas fa-bars"></i>
+                                    </button>
+                                </div>
                                 <ul class="extend">
                                     <li class="extend_item">
                                         <div class="unfold"></div>
@@ -279,6 +303,11 @@
                                 <div class="title">
                                     全家相關網站
                                 </div>
+                                <div class="navbarhide">
+                                    <button class="navbar-hide">
+                                        <i class="fas fa-bars"></i>
+                                    </button>
+                                </div>
                                 <ul class="extend">
                                     <li class="extend_item">
                                         <div class="unfold"></div>
@@ -309,6 +338,11 @@
                                 <div class="title">
                                     各項查詢
                                 </div>
+                                <div class="navbarhide">
+                                    <button class="navbar-hide">
+                                        <i class="fas fa-bars"></i>
+                                    </button>
+                                </div>
                                 <ul class="extend">
                                     <li class="extend_item">
                                         <div class="unfold"></div>
@@ -335,6 +369,7 @@
                         </li>                        
                     </ul>
                 </div>
+                
             </div>
             
             <script src="js/all.js"></script>
@@ -941,50 +976,43 @@
             origin: 'bottom',
 		    distance: '100px',
 	    	delay: 300,
-		    duration: 1000,
-            reset: true
+		    duration: 1000
         });
         ScrollReveal().reveal('.srbottom-400',{
             origin: 'bottom',
 		    distance: '100px',
 	    	delay: 400,
-		    duration: 1000,
-            reset: true
+		    duration: 1000
         });        
         ScrollReveal().reveal('.srbottom-500',{
             origin: 'bottom',
 		    distance: '100px',
 	    	delay: 500,
-		    duration: 1000,
-            reset: true
+		    duration: 1000
         });        
         ScrollReveal().reveal('.srbottom-600',{
             origin: 'bottom',
 		    distance: '100px',
 	    	delay: 600,
-		    duration: 1000,
-            reset: true
+		    duration: 1000
         });
         ScrollReveal().reveal('.srtop-300',{
             origin: 'top',
 		    distance: '100px',
 	    	delay: 300,
-		    duration: 1000,
-            reset: true
+		    duration: 1000
         });
         ScrollReveal().reveal('.srtop-400',{
             origin: 'top',
 		    distance: '100px',
 	    	delay: 400,
-		    duration: 1000,
-            reset: true
+		    duration: 1000
         });
         ScrollReveal().reveal('.srtop-500',{
             origin: 'top',
 		    distance: '100px',
 	    	delay: 500,
-		    duration: 1000,
-            reset: true
+		    duration: 1000
         });
         ScrollReveal().reveal('.srtop-600',{
             origin: 'top',

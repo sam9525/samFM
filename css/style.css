@@ -19,12 +19,8 @@
     box-sizing: border-box;
     position: relative;
 }
-@font-face{
-    font-family: 'ooxx';
-    src: url('/fonts/超研澤中鋼筆行楷.ttf');
-}
 html,body{
-    font-family: 'ooxx', 'Comic Sans MS';
+    font-family: '微軟正黑體', 'Comic Sans MS';
     background-color: #F1F1F1;
     
 }
@@ -117,6 +113,10 @@ a{
 .navbar:hover{
     left: 0px;
 } */
+.navbar .navbar-hide{
+    top: 45px;
+}
+
 
 .navbar .brand{
     display: inline-block;
@@ -416,6 +416,10 @@ a{
 
     transition: all 0.3s;
 }
+.news .news_one h2{
+    padding: 5px 0;
+}
+
 .service .news_one{
     border: 2px solid rgba(0,0,0,0);
     padding: 10px;
@@ -578,7 +582,7 @@ a{
 
 
 @media screen and (max-width: 785px){
-    .navbar{
+    /* .navbar{
         width: 100px;
     }
     .navbar .brand{
@@ -598,12 +602,12 @@ a{
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 1;
         overflow: hidden;
-    }
-    .menu2{
+    } */
+    /* .menu2{
         width: 100px;
         left: 100px;
-    }
-    .navbar .nav .title{
+    } */
+    /* .navbar .nav .title{
         line-height: 30px;
         font-size: 16px;
         padding: 5px 0px 5px 0px;
@@ -626,7 +630,7 @@ a{
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 1;
         overflow: hidden;
-    }
+    } */
     .unfold{
         margin-top: -8px;
     }
@@ -635,10 +639,23 @@ a{
         width: 35px;
         height: 35px;
         margin-top: -35px;
+        left: 16%;
+    }
+    .navbar .navbar-hide{
+        left: 220px;
+        top: 35px;
+    }
+    .menu2 .navbar-hide{
+        left: 440px;
+        background-color: #008BD5;
+        color: #fff;
     }
 
     .topbar{
         height: 35px;
+    }
+    .topbar .brand{
+        display: none;
     }
     .topbar .container{
         height: 35px;
@@ -665,7 +682,7 @@ a{
         width: 33.3333%;
     }
     .col-md-55{
-        width: 14.28%;
+        width: 25%;
     }
 
     .service .title{
@@ -680,11 +697,13 @@ a{
         width: 50%;
     }
     
-    .news_one{
+    .news .news_one{
         margin-bottom: 20px;
+        padding-bottom: 30px;
     }
     .news .news_one h2{
         font-size: 18px;
+        padding: 2px 0;
     }
     .news .news_one h3{
         font-size: 14px;
@@ -695,6 +714,9 @@ a{
 
     .flickity-button{
         display: none;
+    }
+    .flickity-page-dots .dot{
+        margin: 0 6px;
     }
 
     .footer .title{
@@ -720,9 +742,69 @@ a{
 }
 
 @media screen and (max-width: 375px){
-    
+    .navbar{
+        width: 150px;
+    }
+    .navbar .brand{
+        height: 50px;
+    }
+    .navbar .nav .nav_item{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar .nav .nav_link{
+        font-size: 12px;
+        letter-spacing: 2px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+    }
+    .menu2{
+        width: 150px;
+        left: 150px;
+    }
+    .navbar .nav .title{
+        line-height: 30px;
+        font-size: 16px;
+        padding: 5px 0px 5px 0px;
+        margin: 6px 8px 5px 8px;
+
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+    }    
+    .navbar .extend .extend_item{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar .extend .extend_link{
+        font-size: 12px;
+        padding: 0px 8px;
+
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+    }
+    .unfold{
+        margin-top: -10px;
+    }
+
+    .navbar .navbar-hide{
+        left: 150px;
+        top: 35px;
+    }
+    .menu2 .navbar-hide{
+        left: 300px;
+    }
+
     .container{
-        padding: 0;
+        padding: 0 2%;
     }
 
     .navbar-hide{
@@ -745,6 +827,9 @@ a{
         
     }
 
+    .service{
+        padding-bottom: 0;
+    }
     .service .news_one{
         padding: 5px;
         margin-right: 10px;
@@ -758,5 +843,56 @@ a{
     }
     .service .margin10{
         margin: 5px;
+    }
+    .tabs1 li a{
+        font-size: 16px;
+    }
+    .tabs1 #tab-2 .owl-dots{
+        top: -10px;
+    }
+
+    .flickity-page-dots .dot{
+        margin: 0 4px;
+    }
+    .image2 .des{
+        top: 89%;
+        font-size: 12px;
+    }
+
+    .news_one{
+        margin-bottom: 10px;
+    }
+    .news .news_one h2{
+        font-size: 16px;
+
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+    }
+    .news .news_one h3{
+        font-size: 12px;
+    }
+    .space{
+        padding: 5px;
+    }
+
+    .footer .title{
+        padding: 3px;
+        font-size: 12px;
+
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+    }
+    .fmapp{
+        padding: 3px;
+    }
+    .news_three .para{
+        font-size: 8px;
+    }
+    .news_two{
+        padding: 5px;
     }
 }

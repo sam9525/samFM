@@ -13,4 +13,7 @@ $(document).ready(function () {
 			$(event.target).siblings(".like").toggleClass("active");
 		}
 	});
+	$("button").click(function() {
+		$(".navbar").toggle();
+	});
 });
