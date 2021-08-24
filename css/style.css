@@ -198,6 +198,9 @@ a{
 .menu2 .extend .extend_item:hover .unfold{
     width: 100%;
 }
+.menu3{
+    display: none;
+}
 
 .topbar{
     width: 100%;
@@ -511,10 +514,10 @@ a{
     text-align: center;
     white-space: nowrap;
 }
-.footer .para{
+.footer .news_three .para{
     text-align: center;
     padding: 3px;
-    
+
     overflow: hidden;
     white-space: nowrap;
     text-overflow : ellipsis;
@@ -532,7 +535,7 @@ a{
     width: 100%;
 }
 .footer .preview .para{
-    text-align-last: left;
+    text-align: center;
     font-size: 12px;
 }
 .news_two{
@@ -581,7 +584,7 @@ a{
 }
 
 
-@media screen and (max-width: 785px){
+@media screen and (max-width: 768px){
     /* .navbar{
         width: 100px;
     }
@@ -632,7 +635,7 @@ a{
         overflow: hidden;
     } */
     .unfold{
-        margin-top: -8px;
+        margin-top: -12px;
     }
 
     .navbar-hide{
@@ -742,10 +745,17 @@ a{
 }
 
 @media screen and (max-width: 375px){
+    
     .navbar{
-        width: 150px;
+        width: 100%;
     }
     .navbar .brand{
+        display: none;
+    }
+    .navbar .menu{
+        display: none;
+    }
+    /* .navbar .brand{
         height: 50px;
     }
     .navbar .nav .nav_item{
@@ -801,7 +811,85 @@ a{
     }
     .menu2 .navbar-hide{
         left: 300px;
+    } */
+
+    .menu3{
+        padding: 15% 10%;
     }
+    .menu3 .navbar-hide{
+        color: #008BD5;
+        z-index: 20;
+    }
+
+    .navbar .close-btn{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        right: 8px;
+        top: 8px;
+    }
+    .navbar .close-btn span{
+        width: 30px;
+        height: 2px;
+        position: absolute;
+        background-color: #008BD5;
+        top: 50%;
+        left: 50%;
+    }
+    .navbar .close-btn span:nth-child(1){
+        transform: translate(-50%,-50%) rotate(45deg);
+    }
+    .navbar .close-btn span:nth-child(2){
+        transform: translate(-50%,-50%) rotate(-45deg);
+    }
+
+    .menu3-container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .nav-container {
+        position: relative;
+        width: 100%;
+        cursor: pointer;
+    }
+    
+    .nav-container .nav-content {
+        display: none;
+        padding-left: 25px;
+    }
+    
+    .nav-container .nav-title {
+        display: block;
+        position: relative;
+        margin: 0;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: normal;
+        cursor: pointer;
+    }
+    .nav-title .icon-add{
+        float: right;
+        top: -2px;
+        left: 15px;
+        width: 20px;
+        height: 20px;
+    
+        background-image:url('../icon/add-line.svg');
+        background-size: cover;
+        transition: all 0.3s;
+    }
+    .nav-container .nav-box.active .icon-add{
+        background-image: url('../icon/subtract-line.svg');
+    }
+    
+    .nav-container .nav-title:hover,
+    .nav-container .nav-title:active,
+    .nav-container .nav-box.active .nav-title {
+        background-color: #52de97;
+    }
+    
+    
+    
 
     .container{
         padding: 0 2%;
@@ -885,6 +973,13 @@ a{
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 1;
         overflow: hidden;
+    }
+    .footer .preview .para{
+        padding: 0% 10%;
+
+        overflow: none;
+        white-space: none;
+        text-overflow : none;
     }
     .fmapp{
         padding: 3px;
