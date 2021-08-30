@@ -16,4 +16,9 @@ $(document).ready(function () {
 	$("button").click(function() {
 		$(".navbar").toggle();
 	});
+	$(".navbar").show(function(){
+		setTimeout(function(){
+			$('.navbar').hide();
+		}, 5000)
+	})
 });

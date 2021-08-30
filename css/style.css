@@ -83,7 +83,6 @@ a{
     left: 0px;
     z-index: 50;
     background-color: #fff;
-    transition: all 0.5s;
 }
 .navbar-hide{
     position: fixed;
@@ -191,6 +190,8 @@ a{
     left: 220px;
     z-index: 30;
     background-color: #fff;
+    
+    transition: all 0.5s;
 }
 .menu2 .extend .extend_link{
     letter-spacing: normal;
@@ -537,6 +538,7 @@ a{
 .footer .preview .para{
     text-align: center;
     font-size: 12px;
+    padding: 3px;
 }
 .news_two{
     border: 2px solid rgba(0,0,0,0);
