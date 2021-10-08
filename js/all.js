@@ -15,10 +15,12 @@ $(document).ready(function () {
 	});
 	$("button").click(function() {
 		$(".navbar").toggle();
-	});
-	$(".navbar").show(function(){
-		setTimeout(function(){
-			$('.navbar').hide();
-		}, 5000)
-	})
+	}); 
+	if (screen.width > 375){
+		$(".navbar").show(function(){
+			setTimeout(function(){
+				$('.navbar').hide();
+			}, 5000)
+		})
+	}
 });

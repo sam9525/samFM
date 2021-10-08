@@ -757,6 +757,9 @@ a{
     .navbar .menu{
         display: none;
     }
+    .navbar .menu3{
+        display: inline-block;
+    }
     /* .navbar .brand{
         height: 50px;
     }
@@ -816,6 +819,7 @@ a{
     } */
 
     .menu3{
+        width: 100%;
         padding: 15% 10%;
     }
     .menu3 .navbar-hide{
